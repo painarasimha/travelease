@@ -3,7 +3,7 @@ import React from 'react';
 const HomePage = () => {
   return (
     <div className="container flex h-screen">
-      <img className="w-1/2 object-cover" src="src/assets/image4.jpg" alt="Website Image" />
+      <img className="w-1/2 object-cover" src="src/assets/image5.jpg" alt="Website Image" />
       <div className="text-content w-1/2 p-10">
         <h1 className="text-3xl mb-10">Welcome to My Website!</h1>
         <p className="text-lg mb-10">
