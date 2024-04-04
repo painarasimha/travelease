@@ -6,6 +6,7 @@ import TravelPage from './components/Travel';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './components/Home';
 import TravelGuidePage from './components/Travel';
+import ProfilePage from './components/Profile';
 
 function App() {
   const router = createBrowserRouter([
@@ -20,6 +21,10 @@ function App() {
     {
       path: "/hotel",
       element: <><Navbar/><HotelPage/></>
+    },
+    {
+      path: "/profile",
+      element: <><Navbar/><ProfilePage/></>
     }
   ])
 
