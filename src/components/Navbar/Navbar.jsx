@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
 
 // Assuming you have Link mechanism to store and access user login state
-const isLoggedIn = true; // Replace this with your actual login state logic
+const isLoggedIn = false; // Replace this with your actual login state logic
 
 const Navbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -18,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#db5461] text-[#fff] font-bold flex justify-between items-center px-10 py-5 sticky top-0 shadow-2xl">
-      <Link to="/" className="text-xl font-bold">TravelEase</Link>
+      <a href="/" className="text-xl font-bold">TravelEase</a>
       <ul className="flex items-center space-x-4">
         <div className="items-center">
           <button
@@ -40,28 +39,28 @@ const Navbar = () => {
           )}
         </div>
         <li>
-          <Link to="/" className="hover:text-black">Home</Link>
+          <a href="#" className="hover:text-black">Home</a>
         </li>
         <li>
-          <Link to="#" className="hover:text-black">Travel Guide</Link>
+          <a href="#" className="hover:text-black">Travel Guide</a>
         </li>
         <li>
-          <Link to="/hotel" className="hover:text-black">Hotels</Link>
+          <a href="#" className="hover:text-black">Hotels</a>
         </li>
         <li>
           {isLoggedIn ? (
             // Show profile picture for logged-in user
-            <Link to="#" className='hover:text-black'>
+            <a href="#" className='hover:text-black'>
               <svg class="h-8 w-8 text-[#000]-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <i className="fas fa-caret-down"></i>
-            </Link>
+            </a>
           ) : (
             // Show login/signup button for non-logged-in user
-            <Link to="/signup" className=" px-3 py-2 rounded-full bg-[#57a93b] text-white hover:bg-[#386a27]">
+            <a href="/signup" className=" px-3 py-2 rounded-full bg-[#57a93b] text-white hover:bg-[#386a27]">
               Login/Signup
-            </Link>
+            </a>
           )}
         </li>
       </ul>
