@@ -16,6 +16,10 @@ function App() {
     {
       path: "/travelpage",
       element: <><Navbar/><TravelGuidePage/></>
+    },
+    {
+      path: "/hotel",
+      element: <><Navbar/><HotelPage/></>
     }
   ])
 

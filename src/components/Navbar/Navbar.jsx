@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link to="/travelpage" className="hover:text-black">Travel Guide</Link>
         </li>
         <li>
-          <Link to="#" className="hover:text-black">Hotels</Link>
+          <Link to="/hotel" className="hover:text-black">Hotels</Link>
         </li>
         <li>
           {isLoggedIn ? (
