@@ -11,7 +11,7 @@ function ProfilePage({ firstName = 'Narasimha', lastName = 'Pai', badgeName = 'B
   };
   
   return (
-    <div className="profile-container h-screen bg-fixed bg-cover px-8 pt-20 pb-8 " style={{ backgroundImage: `url(${Img5})` }}>
+    <div className="profile-container h-screen bg-cover px-8 pt-20 pb-8 " style={{ backgroundImage: `url(${Img5})` }}>
       <div className="overlay fixed top-[calc(100px + 1rem)] left-1/2 transform -translate-x-1/2 py-8 px-12 rounded-md w-[1160px] h-[520px] bg-gray-300 opacity-70"></div>
       <div className="absolute inset-0 flex flex-col items-center justify-center -left-1/2">
         <img src={ProfileImg} alt="Profile Picture" className="w-64 h-64 fixed rounded-full mb-4 border-2 border-black" />

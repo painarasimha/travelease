@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Assuming you have Link mechanism to store and access user login state
-const isLoggedIn = true; // Replace this with your actual login state logic
+const isLoggedIn = false; // Replace this with your actual login state logic
 
 const Navbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -59,7 +59,7 @@ const Navbar = () => {
             </Link>
           ) : (
             // Show login/signup button for non-logged-in user
-            <Link to="/signup" className=" px-3 py-2 rounded-full bg-[#57a93b] text-white hover:bg-[#386a27]">
+            <Link to="/login" className=" px-3 py-2 rounded-full bg-[#57a93b] text-white hover:bg-[#386a27]">
               Login/Signup
             </Link>
           )}

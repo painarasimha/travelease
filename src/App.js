@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './components/Home';
 import TravelGuidePage from './components/Travel';
 import ProfilePage from './components/Profile';
+import LoginForm from './components/LoginForm';
 
 function App() {
   const router = createBrowserRouter([
@@ -25,13 +26,16 @@ function App() {
     {
       path: "/profile",
       element: <><Navbar/><ProfilePage/></>
+    },
+    {
+      path: "/login",
+      element: <><Navbar/><LoginForm/></>
     }
   ])
 
   return (
     <div>
       <RouterProvider router={router}/>
-      {/*<HotelPage/>*/}
     </div>
   );
 }
