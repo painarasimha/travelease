@@ -6,7 +6,7 @@ function GuidePag1({firstName = 'Narasimha', lastName = 'Pai'}) {
   return (
     <div className="h-screen bg-cover bg-no-repeat bg-center py-14 px-[130px]" style={{ backgroundImage: `url(${Img2})` }}>
         <div className='w-[1260px] h-[590px] bg-gray-700 rounded-3xl opacity-75 shadow-inner shadow-white'>
-            <div className='w-20 h-20 bg-gray-500 ml-64'>
+            <div className='w-20 h-20 bg-gray-500 ml-'>
                 
             </div>
         </div>
