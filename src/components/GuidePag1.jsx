@@ -5,10 +5,10 @@ import GuideProfile1 from '../assets/profile.jpg'
 function GuidePag1({firstName = 'Narasimha', lastName = 'Pai'}) {
   return (
     <div className="h-screen bg-cover bg-no-repeat bg-center py-14 px-[130px]" style={{ backgroundImage: `url(${Img2})` }}>
-        <div className='w-[1260px] h-[590px] bg-gray-700 rounded-3xl opacity-75 shadow-inner shadow-white'>
-            <div className='w-20 h-20 bg-gray-500 ml-'>
-                
-            </div>
+        <div className='w-[1260px] h-[590px] bg-gray-700 rounded-3xl opacity-75 shadow-inner shadow-white py-14'>
+          <div className='w-[790px] h-[480px] bg-gray-500 ml-[400px] rounded-3xl opacity-90 shadow-inner shadow-white'>
+
+          </div>
         </div>
         <div className='absolute inset-0 flex py-48 px-52'>
             <img src={GuideProfile1} alt="guide1profile" className='w-48 h-48 fixed rounded-full'/>
@@ -20,12 +20,4 @@ function GuidePag1({firstName = 'Narasimha', lastName = 'Pai'}) {
   )
 }
 
-export default GuidePag1;
-
-
-{/*<div className="absolute inset-0 flex items-center justify-center -left-1/2">
-            <img src={GuideProfile1} alt="Profile Picture" className="w-40 h-40 fixed rounded-full mb-2 border-2 border-black" />
-            <h1 className="text-2xl font-black fixed text-black">{firstName} {lastName}</h1>
-
-            
-</div>*/}
+export default GuidePag1
