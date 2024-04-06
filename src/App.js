@@ -8,6 +8,7 @@ import HomePage from './components/Home';
 import TravelGuidePage from './components/Travel';
 import ProfilePage from './components/Profile';
 import LoginForm from './components/LoginForm';
+import GuidePag1 from './components/GuidePag1';
 
 function App() {
   const router = createBrowserRouter([
@@ -30,6 +31,10 @@ function App() {
     {
       path: "/login",
       element: <><Navbar/><LoginForm/></>
+    },
+    {
+      path: "/guidepage1",
+      element: <><Navbar/><GuidePag1/></>
     }
   ])
 

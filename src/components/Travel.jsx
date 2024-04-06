@@ -1,7 +1,15 @@
 import React from 'react';
 import Img2 from '../assets/image2.jpg'
+import { useNavigate } from 'react-router-dom'
+
 
 function TravelGuidePage() {
+  const navigate = useNavigate();
+
+  const handleViewGuide1 = () => {
+    navigate('/guidepage1'); // Replace with your actual login route path
+  };
+
   return (
     <div
       className="h-screen bg-cover bg-no-repeat bg-center"
@@ -26,7 +34,7 @@ function TravelGuidePage() {
             />
             <h3 className="text-xl font-medium text-center">John Doe</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
-            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none">
+            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide1}>
               View Guide
             </button>
           </div>
