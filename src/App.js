@@ -39,7 +39,7 @@ function App() {
   ])
 
   return (
-    <div className='overflow-y-auto'>
+    <div>
       <RouterProvider router={router}/>
     </div>
   );
