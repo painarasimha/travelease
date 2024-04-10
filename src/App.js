@@ -9,6 +9,7 @@ import TravelGuidePage from './components/Travel';
 import ProfilePage from './components/Profile';
 import LoginForm from './components/LoginForm';
 import GuidePag1 from './components/GuidePag1';
+import GuidePag2 from './components/GuidePag2';
 
 function App() {
   const router = createBrowserRouter([
@@ -35,6 +36,26 @@ function App() {
     {
       path: "/guidepage1",
       element: <><Navbar/><GuidePag1/></>
+    },
+    {
+      path: "/guidepage2",
+      element: <><Navbar/><GuidePag2/></>
+    },
+    {
+      path: "/guidepage3",
+      element: <><Navbar/><GuidePag2/></>
+    },
+    {
+      path: "/guidepage4",
+      element: <><Navbar/><GuidePag2/></>
+    },
+    {
+      path: "/guidepage5",
+      element: <><Navbar/><GuidePag2/></>
+    },
+    {
+      path: "/guidepage6",
+      element: <><Navbar/><GuidePag2/></>
     }
   ])
 

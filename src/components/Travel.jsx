@@ -10,6 +10,25 @@ function TravelGuidePage() {
     navigate('/guidepage1'); // Replace with your actual login route path
   };
 
+  const handleViewGuide2 = () => {
+    navigate('/guidepage2');
+  };
+
+  const handleViewGuide3 = () => {
+    navigate('/guidepage3');
+  };
+
+  const handleViewGuide4 = () => {
+    navigate('/guidepage4');
+  };
+
+  const handleViewGuide5 = () => {
+    navigate('/guidepage5');
+  };
+
+  const handleViewGuide6 = () => {
+    navigate('/guidepage6');
+  };
   return (
     <div
       className="h-full bg-cover bg-no-repeat bg-center"
@@ -48,7 +67,7 @@ function TravelGuidePage() {
             />
             <h3 className="text-xl font-medium text-center">Jane Smith</h3>
             <p className="text-gray-600 text-center">Passionate Italy Enthusiast (Replace with guide's expertise)</p>
-            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none">
+            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide2}>
               View Guide
             </button>
           </div>
@@ -62,7 +81,7 @@ function TravelGuidePage() {
             />
             <h3 className="text-xl font-medium text-center">Michael Chen</h3>
             <p className="text-gray-600 text-center">Adventurous Spain Traveler (Replace with guide's expertise)</p>
-            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none">
+            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide3}>
               View Guide
             </button>
           </div>
@@ -74,7 +93,7 @@ function TravelGuidePage() {
             />
             <h3 className="text-xl font-medium text-center">John Doe</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
-            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide1}>
+            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide4}>
               View Guide
             </button>
           </div>
@@ -86,7 +105,7 @@ function TravelGuidePage() {
             />
             <h3 className="text-xl font-medium text-center">John Doe</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
-            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide1}>
+            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide5}>
               View Guide
             </button>
           </div>
@@ -98,7 +117,7 @@ function TravelGuidePage() {
             />
             <h3 className="text-xl font-medium text-center">John Doe</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
-            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide1}>
+            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide6}>
               View Guide
             </button>
           </div>
