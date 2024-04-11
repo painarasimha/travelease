@@ -1,6 +1,12 @@
 import React from 'react';
 import Img2 from '../assets/image2.jpg'
 import { useNavigate } from 'react-router-dom'
+import ProfImg1 from '../assets/prof1.jpg'
+import ProfImg2 from '../assets/prof2.jpg'
+import ProfImg3 from '../assets/prof3.jpg'
+import ProfImg4 from '../assets/prof4.jpg'
+import ProfImg5 from '../assets/prof5.jpg'
+import ProfImg6 from '../assets/prof7.jpg'
 
 
 function TravelGuidePage() {
@@ -47,9 +53,9 @@ function TravelGuidePage() {
           {/* Card 1 */}
           <div className="bg-gray-300 shadow-black rounded-lg text-center shadow-sm p-4 w-96 h-96">
             <img
-              src="https://placeimg.com/640/480/arch"
+              src={ProfImg1}
               alt="Travel guide profile picture"
-              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20"
+              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
             <h3 className="text-xl font-medium text-center">John Doe</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
@@ -61,9 +67,9 @@ function TravelGuidePage() {
           {/* Card 2 (Replace with your own content) */}
           <div className="bg-gray-300 shadow-black rounded-lg text-center shadow-sm p-4 w-96 h-96">
             <img
-              src="https://placeimg.com/640/480/nature"
+              src={ProfImg2}
               alt="Travel guide profile picture"
-              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20"
+              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
             <h3 className="text-xl font-medium text-center">Jane Smith</h3>
             <p className="text-gray-600 text-center">Passionate Italy Enthusiast (Replace with guide's expertise)</p>
@@ -75,9 +81,9 @@ function TravelGuidePage() {
           {/* Card 3 (Replace with your own content) */}
           <div className="bg-gray-300 shadow-black rounded-lg text-center shadow-sm p-4 w-96 h-96">
             <img
-              src="https://placeimg.com/640/480/city"
+              src={ProfImg3}
               alt="Travel guide profile picture"
-              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20"
+              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
             <h3 className="text-xl font-medium text-center">Michael Chen</h3>
             <p className="text-gray-600 text-center">Adventurous Spain Traveler (Replace with guide's expertise)</p>
@@ -87,9 +93,9 @@ function TravelGuidePage() {
           </div>
           <div className="bg-gray-300 shadow-black rounded-lg text-center shadow-sm p-4 w-96 h-96">
             <img
-              src="https://placeimg.com/640/480/arch"
+              src={ProfImg4}
               alt="Travel guide profile picture"
-              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20"
+              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
             <h3 className="text-xl font-medium text-center">John Doe</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
@@ -99,9 +105,9 @@ function TravelGuidePage() {
           </div>
           <div className="bg-gray-300 shadow-black rounded-lg text-center shadow-sm p-4 w-96 h-96">
             <img
-              src="https://placeimg.com/640/480/arch"
+              src={ProfImg5}
               alt="Travel guide profile picture"
-              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20"
+              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
             <h3 className="text-xl font-medium text-center">John Doe</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
@@ -111,9 +117,9 @@ function TravelGuidePage() {
           </div>
           <div className="bg-gray-300 shadow-black rounded-lg text-center shadow-sm p-4 w-96 h-96">
             <img
-              src="https://placeimg.com/640/480/arch"
+              src={ProfImg6}
               alt="Travel guide profile picture"
-              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20"
+              className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
             <h3 className="text-xl font-medium text-center">John Doe</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
