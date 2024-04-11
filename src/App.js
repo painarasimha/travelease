@@ -10,6 +10,7 @@ import ProfilePage from './components/Profile';
 import LoginForm from './components/LoginForm';
 import GuidePag1 from './components/GuidePag1';
 import GuidePag2 from './components/GuidePag2';
+import SignupForm from './components/Signup';
 
 function App() {
   const router = createBrowserRouter([
@@ -56,6 +57,10 @@ function App() {
     {
       path: "/guidepage6",
       element: <><Navbar/><GuidePag2/></>
+    },
+    {
+      path: "/signup",
+      element: <><Navbar/><SignupForm/></>
     }
   ])
 
