@@ -1,10 +1,10 @@
 import React from 'react'
 import Img2 from '../assets/image5.jpg'
 import leftarrow from '../assets/leftarrow.svg'
-import GuideProfile1 from '../assets/profile.jpg'
+import GuideProfile4 from '../assets/prof4.jpg'
 import { useNavigate } from 'react-router-dom';
 
-function GuidePag4({firstName = 'Narasimha', lastName = 'Pai'}) {
+function GuidePag4({firstName = 'Ishaan', lastName = 'Batra'}) {
   const navigate = useNavigate();
 
   const handleLeftArrow = () =>{
@@ -49,8 +49,8 @@ function GuidePag4({firstName = 'Narasimha', lastName = 'Pai'}) {
           </div>
         </div>
         <div className='absolute inset-0 flex py-48 px-52'>
-            <img src={GuideProfile1} alt="guide1profile" className='w-48 h-48 fixed rounded-full border-4 border-black'/>
-            <h1 className="text-2xl font-black fixed text-black mt-52 ml-4">{firstName} {lastName}</h1>
+            <img src={GuideProfile4} alt="guide1profile" className='w-48 h-48 fixed rounded-full border-4 border-black object-cover'/>
+            <h1 className="text-2xl font-black fixed text-black mt-52 ml-6">{firstName} {lastName}</h1>
             <div className='w-[2px] fixed h-[590px] ml-64 mt-[-60px] bg-black'></div>
             <button className='fixed -mt-10 -ml-14 hover:scale-150 rounded ' onClick={handleLeftArrow}>
               <img src={leftarrow} className='w-8 h-8 rounded'/>

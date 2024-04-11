@@ -57,7 +57,7 @@ function TravelGuidePage() {
               alt="Travel guide profile picture"
               className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
-            <h3 className="text-xl font-medium text-center">John Doe</h3>
+            <h3 className="text-xl font-medium text-center">Vihaan Ahuja</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
             <button className="mt-10 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide1}>
               View Guide
@@ -71,7 +71,7 @@ function TravelGuidePage() {
               alt="Travel guide profile picture"
               className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
-            <h3 className="text-xl font-medium text-center">Jane Smith</h3>
+            <h3 className="text-xl font-medium text-center">Priya Jha</h3>
             <p className="text-gray-600 text-center">Passionate Italy Enthusiast (Replace with guide's expertise)</p>
             <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide2}>
               View Guide
@@ -85,7 +85,7 @@ function TravelGuidePage() {
               alt="Travel guide profile picture"
               className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
-            <h3 className="text-xl font-medium text-center">Michael Chen</h3>
+            <h3 className="text-xl font-medium text-center">Arushi Agarwal</h3>
             <p className="text-gray-600 text-center">Adventurous Spain Traveler (Replace with guide's expertise)</p>
             <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide3}>
               View Guide
@@ -97,7 +97,7 @@ function TravelGuidePage() {
               alt="Travel guide profile picture"
               className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
-            <h3 className="text-xl font-medium text-center">John Doe</h3>
+            <h3 className="text-xl font-medium text-center">Ishaan Batra</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
             <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide4}>
               View Guide
@@ -109,7 +109,7 @@ function TravelGuidePage() {
               alt="Travel guide profile picture"
               className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
-            <h3 className="text-xl font-medium text-center">John Doe</h3>
+            <h3 className="text-xl font-medium text-center">Baldev Choudhary</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
             <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide5}>
               View Guide
@@ -121,7 +121,7 @@ function TravelGuidePage() {
               alt="Travel guide profile picture"
               className="rounded-full mx-auto w-20 h-20 mb-2 mt-20 object-cover"
             />
-            <h3 className="text-xl font-medium text-center">John Doe</h3>
+            <h3 className="text-xl font-medium text-center">Aisha Syed</h3>
             <p className="text-gray-600 text-center">Experienced France Explorer</p>
             <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none" onClick={handleViewGuide6}>
               View Guide

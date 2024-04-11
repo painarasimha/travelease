@@ -10,6 +10,10 @@ import ProfilePage from './components/Profile';
 import LoginForm from './components/LoginForm';
 import GuidePag1 from './components/GuidePag1';
 import GuidePag2 from './components/GuidePag2';
+import GuidePag3 from './components/GuidePag3';
+import GuidePag4 from './components/GuidePag4';
+import GuidePag5 from './components/GuidePag5';
+import GuidePag6 from './components/GuidePag6';
 import SignupForm from './components/Signup';
 
 function App() {
@@ -44,19 +48,19 @@ function App() {
     },
     {
       path: "/guidepage3",
-      element: <><Navbar/><GuidePag2/></>
+      element: <><Navbar/><GuidePag3/></>
     },
     {
       path: "/guidepage4",
-      element: <><Navbar/><GuidePag2/></>
+      element: <><Navbar/><GuidePag4/></>
     },
     {
       path: "/guidepage5",
-      element: <><Navbar/><GuidePag2/></>
+      element: <><Navbar/><GuidePag5/></>
     },
     {
       path: "/guidepage6",
-      element: <><Navbar/><GuidePag2/></>
+      element: <><Navbar/><GuidePag6/></>
     },
     {
       path: "/signup",
