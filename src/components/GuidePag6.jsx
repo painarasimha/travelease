@@ -15,33 +15,33 @@ function GuidePag6({firstName = 'Aisha', lastName = 'Syed'}) {
         <div className='w-[1260px] h-[590px] fixed bg-[#606421] rounded-3xl shadow-inner shadow-black py-8'>
         <div className='py-16 px-20'>
             <h1 className='text-2xl mt-16 ml-5 font-bold'>Description</h1>
-            <p className='text-lg ml-5 text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi in adipisci animi maiores incidunt aut ratione eius cum 
-              porro fugit tempora vel quae, quia quam suscipit iste quod dolorum? Cupiditate.</p>
+            <p className='text-lg ml-5 text-black font-semibold py-2'>Ooty, nestled in the Nilgiri Hills of Tamil Nadu, is a picturesque hill station renowned for its lush tea plantations, serene lakes, and pleasant climate. 
+            Visitors can explore its charming colonial architecture, embark on scenic treks, and enjoy leisurely boat rides on Ooty Lake</p>
             <h1 className='text-2xl font-bold mt-4 ml-5'>Travel Plan</h1>
             <div className='grid grid-cols-4 ml-5'>
             <div>
               <h2 className='text-xl font-bold mt-4 ml-3'>Day 1</h2>
               <ul className='marker:text-green space-y-4 list-inside list-disc ml-3 mt-3'>
-                <li>Sabarmati Ashram</li>
-                <li>Sidi Saiyyed Mosque</li>
-                <li>Calico Museum of Textiles</li>
+                <li>Nilgiri Mountain Railway</li>
+                <li>Botanical Garden</li>
+                <li>Boat Ride on Ooty Lake</li>
               </ul>
             </div>
             <div>
               <h2 className='text-xl font-bold mt-4 ml-3'>Day 2</h2>
               <ul className='marker:text-green space-y-4 list-inside list-disc ml-3 mt-3'>
-                <li>Adalaj Stepwell</li>
-                <li>Hutheesing Jain Temple</li>
-                <li>Akshardham Temple</li>
+                <li>Doddabetta Peak</li>
+                <li>Waterfalls of Pykara</li>
+                <li>Avalncha Lake</li>
               </ul>
             </div>
             <div>
               <h2 className='text-xl font-bold mt-4 ml-3'>Day 3</h2>
               <ul className='marker:text-green space-y-4 list-inside list-disc ml-3 mt-3'>
-                <li>Food delights at Manek Chowk</li>
-                <li>Markets of Law Garden</li>
-                <li>UNESCO World Heritage Site of Rani ki Vav in Patan</li>
-                <li>Modhera Sun Temple</li>
+                <li>St. Stephen's Church</li>
+                <li>Charming streets of Upper and Lower Bazaar</li>
+                <li>Glenmorgan Tea Estate</li>
+                <li>Picnic at Sims Park</li>
               </ul>
             </div>
           </div>
