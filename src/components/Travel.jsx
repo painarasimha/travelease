@@ -40,12 +40,6 @@ function TravelGuidePage() {
       className="h-full bg-cover bg-no-repeat bg-center"
       style={{ backgroundImage: `url(${Img2})` }}
     >
-      {/* Search Bar */}
-      <div className="flex justify-center pt-36"> {/* Padding from navbar */}
-        <div className="bg-white rounded-full shadow-xl px-4 py-3 w-full md:w-3/4 lg:w-1/2">
-          <input type="text" className="w-full px-2 py-1 rounded-2xl focus:outline-none" placeholder="Search for guides by location" />
-        </div>
-      </div>
 
       {/* Travel Guide Cards */}
       <div className="flex justify-center mt-24 pb-10">
