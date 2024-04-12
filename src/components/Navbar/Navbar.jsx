@@ -17,28 +17,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#db5461] text-[#fff] font-bold flex justify-between items-center px-10 py-5 top-0 shadow-2xl">
-      <Link to="/" className="text-xl font-bold">TravelEase</Link>
+    <nav className="bg-[#142350] text-[#fff] font-bold flex justify-between items-center px-10 py-5 top-0 shadow-2xl">
+      <Link to="/" className="text-2xl font-bold">TravelEase</Link>
       <ul className="flex items-center space-x-4">
-        <div className="items-center">
-          <button
-            className="px-2 py-2 hover:bg-gray-600 rounded-full"
-            onClick={handleSearchToggle}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="white" class="w-5 h-5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
-          </button>
-          {searchOpen && (
-            <input
-              type="text"
-              className="rounded-full border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500 placeholder-gray-400"
-              placeholder=" Search..."
-              value={searchTerm}
-              onChange={handleChange}
-            />
-          )}
-        </div>
+        
         <li>
           <Link to="/" className="hover:text-black">Home</Link>
         </li>
@@ -59,7 +41,7 @@ const Navbar = () => {
             </Link>
           ) : (
             // Show login/signup button for non-logged-in user
-            <Link to="/login" className=" px-3 py-2 rounded-full bg-[#57a93b] text-white hover:bg-[#386a27]">
+            <Link to="/login" className="justify-items-center px-3 py-2 rounded-full bg-[#316b1d] text-white hover:bg-[#386a27]">
               Login/Signup
             </Link>
           )}

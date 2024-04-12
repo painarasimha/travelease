@@ -11,7 +11,7 @@ const HomePage = () => {
     navigate('/login'); // Replace with your actual login route path
   };
   return (
-    <div className="container flex h-screen">
+    <div className="container flex h-screen ">
       <div className="background-image w-full h-full bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${Img1})` }}>
         <div className="hero-text absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-center text-white pt-[15px] w-[750px]">
           <h1 className='text-5xl text-black font-extrabold mb-2'> Welcome to TravelEase!</h1>

@@ -22,8 +22,8 @@ const HotelPage = () => {
     <div className="h-screen bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${Img2})` }}>
       <div className="flex flex-col items-center justify-center h-full">
         <div className="flex flex-wrap justify-center gap-10 mt-10">
-          <div className='w-[400px] h-[400px] rounded-sm bg-white'>
-            <div className="w-[400px] h-56 shadow-md shadow-black rounded-sm bg-cover p-4 text-center" style={{backgroundImage: `url(${HotelImg1})`}}></div>
+          <div className='w-[400px] h-[400px] border-4 border-black rounded-sm bg-white'>
+            <div className="w-[393px] h-56 shadow-md shadow-black rounded-sm bg-cover p-4 text-center" style={{backgroundImage: `url(${HotelImg1})`}}></div>
               <h2 className='text-2xl font-bold px-5 py-3'>Fort Chandragupt Hotel</h2>
               <p className='text-[9px] font-bold -mb-2 ml-10'>Starting Rate/Night</p>
               <div className='ml-5'>
@@ -34,8 +34,8 @@ const HotelPage = () => {
                 Book Now
               </button>
           </div>
-          <div className='w-[400px] h-[400px] rounded-sm bg-white'>
-            <div className="w-[400px] h-56 shadow-md shadow-black rounded-sm bg-cover p-4 text-center" style={{backgroundImage: `url(${HotelImg2})`}}></div>
+          <div className='w-[400px] h-[400px] border-4 border-black rounded-sm bg-white'>
+            <div className="w-[393px] h-56 shadow-md shadow-black rounded-sm bg-cover p-4 text-center" style={{backgroundImage: `url(${HotelImg2})`}}></div>
               <h2 className='text-2xl font-bold px-5 py-3'>Courtyard Ahmedabad</h2>
               <p className='text-[9px] font-bold -mb-2 ml-10'>Starting Rate/Night</p>
               <div className='ml-5'>
@@ -46,8 +46,8 @@ const HotelPage = () => {
                 Book Now
               </button>
           </div>
-          <div className='w-[400px] h-[400px] rounded-sm bg-white'>
-            <div className="w-[400px] h-56 shadow-md shadow-black rounded-sm bg-cover p-4 text-center" style={{backgroundImage: `url(${HotelImg3})`}}></div>
+          <div className='w-[400px] h-[400px] border-4 border-black rounded-sm bg-white'>
+            <div className="w-[393px] h-56 shadow-md shadow-black rounded-sm bg-cover p-4 text-center" style={{backgroundImage: `url(${HotelImg3})`}}></div>
               <h2 className='text-2xl font-bold px-5 py-3'>Fort Chandragupt Hotel</h2>
               <p className='text-[9px] font-bold -mb-2 ml-10'>Starting Rate/Night</p>
               <div className='ml-5'>

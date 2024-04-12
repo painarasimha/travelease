@@ -26,7 +26,7 @@ const LoginForm = () => {
         </div>
         <form className="space-y-8">
           <div className="flex flex-col">
-            <label htmlFor="username" className="text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="username" className="text-sm font-medium text-black mb-2">
               Username/Phone Number
             </label>
             <input
@@ -40,7 +40,7 @@ const LoginForm = () => {
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="password" className="text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="password" className="text-sm font-medium text-black mb-2">
               Password
             </label>
             <input
@@ -56,7 +56,7 @@ const LoginForm = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <input type="checkbox" id="remember-me" name="remember-me" className="h-5 w-5 rounded border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50" />
-              <label htmlFor="remember-me" className="text-sm ml-2 text-gray-700">
+              <label htmlFor="remember-me" className="text-sm ml-2 text-black">
                 Remember Me
               </label>
             </div>
