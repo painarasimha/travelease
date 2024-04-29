@@ -35,7 +35,7 @@ const LoginForm = () => {
               name="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full px-3 py-2 rounded-lg bg-gray-200 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+              className="w-full px-3 py-2 rounded-lg bg-gray-200 border shadow-inner shadow-gray-500 border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
               required
             />
           </div>
@@ -49,7 +49,7 @@ const LoginForm = () => {
               name="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 rounded-lg bg-gray-200 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+              className="w-full px-3 py-2 rounded-lg bg-gray-200 border shadow-inner shadow-gray-500 border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
               required
             />
           </div>
