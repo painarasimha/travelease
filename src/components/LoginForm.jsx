@@ -1,16 +1,30 @@
 import React, { useState } from 'react';
 import BGImg from '../assets/loginformbg.jpg'
 import { useNavigate } from 'react-router-dom';
+import { getAuth,signInWithEmailAndPassword } from 'firebase/auth';
 
 const LoginForm = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [mode, setMode] = useState('login'); // 'login' or 'signup'
 
   const navigate = useNavigate();
 
-  const handleLogin = () => {
-    navigate('/login'); // Replace with your actual login route path
+  const auth = getAuth();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState(null);
+
+  const handleLogin = async (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      // User logged in successfully
+      console.log("Logged In Successfully!");
+      // Redirect to desired page after successful login (optional)
+      // window.location.href = "/dashboard";
+    } catch (error) {
+      console.error("Login Error:", error.message);
+      setError(error.message); // Set error message for display
+    }
+    navigate("/travelpage")
   };
 
   const handleSignup = () => {
@@ -24,17 +38,17 @@ const LoginForm = () => {
           <div className='bg-purple-600  rounded-xl w-16 px-2 text-lg'><button className='font-bold cursor-pointer' onClick={handleLogin}>Login</button></div>
           <div className='hover:scale-150 rounded-xl w-16 px-[6px] text-lg'><button className='font-bold cursor-pointer' onClick={handleSignup}>Signup</button></div>
         </div>
-        <form className="space-y-8">
+        <form className="space-y-8" onSubmit={handleLogin}>
           <div className="flex flex-col">
-            <label htmlFor="username" className="text-sm font-medium text-black mb-2">
-              Username/Phone Number
+            <label htmlFor="email" className="text-sm font-medium text-black mb-2">
+              Email
             </label>
             <input
               type="text"
-              id="username"
-              name="username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 rounded-lg bg-gray-200 border shadow-inner shadow-gray-500 border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
               required
             />

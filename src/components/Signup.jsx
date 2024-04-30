@@ -59,7 +59,7 @@ function SignupForm() {
       console.log('User signed up:', userCredential.user);
 
       // Add user data (first name, last name, phone number) to database (optional)
-      // const user = userCredential.user;
+      const user = userCredential.user;
       // const db = getFirestore(app); // Assuming you're using Firestore
       // await db.collection('users').doc(user.uid).set({
       //   firstName,
