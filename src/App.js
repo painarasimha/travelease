@@ -15,6 +15,7 @@ import GuidePag4 from './components/GuidePag4';
 import GuidePag5 from './components/GuidePag5';
 import GuidePag6 from './components/GuidePag6';
 import SignupForm from './components/Signup';
+import ProfileDiv from './components/ProfileDiv';
 
 function App() {
   const router = createBrowserRouter([
@@ -65,6 +66,10 @@ function App() {
     {
       path: "/signup",
       element: <><Navbar/><SignupForm/></>
+    },
+    {
+      path: "/profilediv",
+      element: <><Navbar /><ProfileDiv /></>
     }
   ])
 
