@@ -6,12 +6,8 @@ import { auth } from '../../firebase';
 const user = auth.currentUser;
 
 const Navbar = () => {
-  const [searchOpen, setSearchOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSearchToggle = () => {
-    setSearchOpen(!searchOpen);
-  };
 
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
