@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import {getAuth} from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore/lite';
 
 const firebaseConfig = {
   // Your Firebase project configuration details from the console
@@ -11,8 +12,9 @@ const firebaseConfig = {
   appId: '1:1032745855271:web:bda81c7a12f61b3fa52102'
 };
 
-console.log('Working')
-const app = initializeApp(firebaseConfig);
-console.log('Working2')
-export const auth = getAuth(app);
 
+const app = initializeApp(firebaseConfig);
+const database = getFirestore(app);
+const auth = getAuth();
+
+export { app, database, auth};

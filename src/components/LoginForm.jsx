@@ -16,6 +16,7 @@ const LoginForm = () => {
     e.preventDefault(); // Prevent default form submission behavior
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
       // User logged in successfully
       console.log("Logged In Successfully!");
       // Redirect to desired page after successful login (optional)

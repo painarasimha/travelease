@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import BGImg from '../assets/loginformbg.jpg'
 import { useNavigate } from 'react-router-dom'
-import { auth } from '../firebase';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import "react-toastify/ReactToastify.css";
+import { app, database, auth} from '../firebase'
 
 function SignupForm() {
   const [firstName, setFirstName] = useState('');
@@ -44,8 +44,13 @@ function SignupForm() {
 
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      userCredential.user.displayName = firstName + " " + lastName
-      userCredential.user.phoneNumber = phoneNo
+      const user = userCredential.user;
+
+      // await database.collection('users').doc(user.uid).set({
+      //   firstName,
+      //   lastName,
+      //   phoneNo,
+      // });
 
       toast.success('Signed Up Successfully!',{
         position: 'bottom-right',
@@ -57,16 +62,14 @@ function SignupForm() {
       });
       console.log('User signed up:', userCredential.user);
 
-      // Add user data (first name, last name, phone number) to database (optional)
-      const user = userCredential.user;
-      // const db = getFirestore(app); // Assuming you're using Firestore
-      // await db.collection('users').doc(user.uid).set({
-      //   firstName,
-      //   lastName,
-      //   phoneNo,
-      // });
+      setEmail('');
+      setPassword('');
+      setConfirmPassword('');
+      setFirstName('');
+      setLastName('');
+      setPhoneNo('');
 
-      navigate('/');
+      navigate('/login');
 
       // Redirect to a success page or display confirmation message
     } catch (error) {
