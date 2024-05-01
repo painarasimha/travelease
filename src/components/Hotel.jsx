@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Img2 from '../assets/image5.jpg'
+import Img2 from '../assets/imagee2.jpg'
 import HotelImg1 from '../assets/Hotel1.webp'
 import HotelImg2 from '../assets/Hotel2.webp'
 import HotelImg3 from '../assets/Hotel3.webp'
@@ -105,7 +105,7 @@ const handleBooking = (hotel) => {
 
 const HotelCard = ({ hotel }) => (
   <div className="flex flex-col flex-start justify-center w-[400px] h-[400px] border-4 border-black rounded-sm bg-white">
-    <div className="shadow-md shadow-black rounded-sm bg-cover -mt-[63px]" style={{ backgroundImage: `url(${hotel.image})`, height: '200px', width: '393px' }}>
+    <div className="shadow-md shadow-black rounded-sm bg-cover -mt-[63px]" style= {{ backgroundImage: `url(${hotel.image})`, height: '200px', width: '393px' }}>
       <div className="h-full flex items-end justify-start mt-8">
         <h2 className='text-2xl ml-3 font-bold text-left'>{hotel.name}</h2>
       </div>
