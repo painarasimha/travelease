@@ -41,54 +41,63 @@ const HotelPage = () => {
       image: HotelImg4,
       price: 12477,
       rating: 4.2,
+      agodaLink: 'https://www.agoda.com/vesta-international/hotel/jaipur-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=-999&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-05-2&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=8&los=1&searchrequestid=879272f1-8dcd-400b-a74e-866e0d344f77&ds=P3NjgOF%2BSZaW0pjp'
     },
     {
       name: 'Holiday Inn Express Ahmedabad Prahlad Nagar ',
       image: HotelImg5,
       price: 3099,
       rating: 3.9,
+      agodaLink: 'https://www.agoda.com/holiday-inn-express-ahmedabad-prahlad-nagar/hotel/ahmedabad-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=-999&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-05-2&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=2%2C8&los=1&searchrequestid=88e0b1cd-e0a0-4926-beb3-7d75a9a72ef0&ds=P3NjgOF%2BSZaW0pjp'
     },
     {
       name: 'Hotel cliffton, Mumbai ',
       image: HotelImg6,
       price: 9761,
       rating: 3.9,
+      agodaLink: 'https://www.agoda.com/hotel-cliffton/hotel/mumbai-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=-999&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-05-2&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=1%2C8&los=1&searchrequestid=c702e65f-5f64-4f29-802c-68c93c3b40cc&ds=P3NjgOF%2BSZaW0pjp'
     },
     {
       name: 'The Grand Tashree at Delhi Airport',
       image: HotelImg7,
       price: 5759,
       rating: 3.7,
+      agodaLink: 'https://www.agoda.com/hotel-grand-tashree-h36930932/hotel/new-delhi-and-ncr-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=-999&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2024-05-2&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=4%2C-1&los=2&searchrequestid=29953854-1bb2-4f54-b20c-03cd35d512dd&ds=P3NjgOF%2BSZaW0pjp'
     },
     {
       name: 'Townhouse OAK Hotel C Pearls, Delhi',
       image: HotelImg8,
       price: 5233,
       rating: 3.5,
+      agodaLink: 'https://www.agoda.com/c-pearls-hotel-banquet/hotel/new-delhi-and-ncr-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=-999&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2024-05-2&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=5%2C-1&los=2&searchrequestid=29953854-1bb2-4f54-b20c-03cd35d512dd&ds=P3NjgOF%2BSZaW0pjp'
     },
     {
       name: 'Hotel Golden Premier Amritsar',
       image: HotelImg9,
       price: 2924,
       rating: 4.7,
+      agodaLink: 'https://www.agoda.com/lemon-tree-hotel-amritsar/hotel/amritsar-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=-999&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-05-2&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&isCityHaveAsq=false&los=1&searchrequestid=262f2d85-22db-41a9-b90f-0cd7f49696d9&ds=P3NjgOF%2BSZaW0pjp'
     },
     {
       name: 'Country Inn Hall of Heritage Amritsar',
       image: HotelImg10,
       price: 11000,
       rating: 3.7,
+      agodaLink: 'https://www.agoda.com/hall-of-heritage/hotel/amritsar-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=-999&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-05-2&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=7%2C8&los=1&searchrequestid=262f2d85-22db-41a9-b90f-0cd7f49696d9&ds=P3NjgOF%2BSZaW0pjp'
     },
     {
       name: 'Lance Silver Falls Resorts,Ooty',
       image: HotelImg11,
       price: 5338,
       rating: 3.5,
+      agodaLink: 'https://www.agoda.com/lance-silver-falls-resorts/hotel/ooty-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=-999&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-05-2&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=5%2C8&los=1&searchrequestid=1c5abd26-18e5-4889-bcde-9a423942660b&ds=P3NjgOF%2BSZaW0pjp'
     },
     {
       name: 'Accord Highland Ooty',
       image: HotelImg12,
       price: 7561,
       rating: 4.2,
+      agodaLink: 'https://www.agoda.com/accord-highland-ooty/hotel/ooty-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=-999&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-05-2&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=7%2C1&los=1&searchrequestid=1c5abd26-18e5-4889-bcde-9a423942660b&ds=P3NjgOF%2BSZaW0pjp'
     }
     // Add more hotels here
   ]);
