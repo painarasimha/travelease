@@ -47,7 +47,7 @@ function ProfilePage({ firstName = 'Liam', lastName = 'Singh', email = 'liamsing
         <h1 className="text-2xl font-semibold p-64 top-4 left-[428px] fixed text-black">Lastname: {lastName}</h1>
         <h1 className="text-2xl font-semibold p-64 top-16 left-[428px] fixed text-black">Email: {email}</h1>
         <h1 className="text-2xl font-semibold p-64 top-[113px] left-[428px] fixed text-black">Phone No: {phone}</h1> 
-        <button className="fixed font-bold left-[700px] mt-[530px] px-5 py-3 bg-green-900 shadow-inner shadow-slate-500 text-white rounded-md hover:bg-green-700 focus:outline-none" onClick={handleLogout}>
+        <button className="fixed font-bold left-[700px] mt-[530px] px-6 py-3 bg-green-900 shadow-inner shadow-slate-500 text-white rounded-md hover:bg-green-700 focus:outline-none" onClick={handleLogout}>
           Logout
         </button>
       </div>
