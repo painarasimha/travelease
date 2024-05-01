@@ -69,7 +69,7 @@ function SignupForm() {
       setLastName('');
       setPhoneNo('');
 
-      navigate('/login');
+      navigate('/travelpage');
 
       // Redirect to a success page or display confirmation message
     } catch (error) {

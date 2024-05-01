@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import BGImg from '../assets/loginformbg.jpg'
 import { useNavigate } from 'react-router-dom';
 import { getAuth,signInWithEmailAndPassword } from 'firebase/auth';
+import { toast } from 'react-toastify';
 
 const LoginForm = () => {
 
@@ -19,10 +20,14 @@ const LoginForm = () => {
       const user = userCredential.user;
       // User logged in successfully
       console.log("Logged In Successfully!");
+      console.log(user)
       // Redirect to desired page after successful login (optional)
       // window.location.href = "/dashboard";
     } catch (error) {
       console.error("Login Error:", error.message);
+      if (error.message.includes("wrong-password")){
+        toast.error("Incorrect password. Please try again.")
+      }
       setError(error.message); // Set error message for display
     }
     navigate("/travelpage")
