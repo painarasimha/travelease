@@ -6,7 +6,7 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   const handleGetStarted = () => {
-    navigate('/login'); // Replace with your actual login route path
+    navigate('/signup'); // Replace with your actual login route path
   };
   return (
     <div className="container flex h-screen ">
