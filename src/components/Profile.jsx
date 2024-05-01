@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Img5 from '../assets/image1.jpg';
-import ProfileImg from '../assets/profile.jpg'
+import ProfileImg from '../assets/profile1.jpg'
 import { getAuth, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 

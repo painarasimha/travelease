@@ -49,7 +49,7 @@ const Navbar = () => {
       </Link>
      ) : (
       // Show login/signup button for non-logged-in user
-      <Link to="/login" className="justify-items-center px-3 py-2 rounded-full bg-[#316b1d] text-white hover:bg-[#386a27]">
+      <Link to="/signup" className="justify-items-center px-3 py-2 rounded-full bg-[#316b1d] text-white hover:bg-[#386a27]">
        Login/Signup
       </Link>
      )}
