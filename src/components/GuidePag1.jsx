@@ -52,6 +52,8 @@ function GuidePag1({firstName = 'Vihaan', lastName = 'Ahuja'}) {
             <img src={GuideProfile1} alt="guide1profile" className='w-24 h-24 fixed rounded-full border-4 -mt-6 border-black object-cover'/>
             <h1 className="text-2xl font-black ml-28 -mt-3 fixed text-black">{firstName} {lastName}</h1>
             <h3 className='fixed mt-5 ml-[116px] text-sm font-semibold'>From Old-world Charm to Modern Marvels: Explore Delhi with Me</h3>
+            <span className='fixed mt-10 ml-[114px] text-sm font-semibold'>+91 8864391782               |</span>
+            <span className='fixed mt-10 ml-[234px] text-sm font-semibold'>vihaanahuja24@gmail.com</span>
             <button className='fixed -mt-10 -ml-14 hover:scale-150 rounded' onClick={handleLeftArrow}>
               <img src={leftarrow} className='w-5 h-5 rounded'/>
             </button>

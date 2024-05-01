@@ -1,7 +1,5 @@
 import React from 'react';
 import Img1 from '../assets/image2.jpg'; // Background Image
-import Img2 from '../assets/image3.jpg'; // Additional Image (replace with your image path)
-import Img3 from '../assets/image4.jpg'; // Optional Third Image (uncomment if needed)
 import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {

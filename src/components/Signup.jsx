@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import BGImg from '../assets/loginformbg.jpg'
 import { useNavigate } from 'react-router-dom'
-import { auth,app } from '../firebase';
-import { getFirestore } from 'firebase/firestore';
+import { auth } from '../firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import "react-toastify/ReactToastify.css";

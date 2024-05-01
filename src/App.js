@@ -1,8 +1,9 @@
 import './index.css'
+import firebase from './firebase';
+import 'firebase/firestore';
+import 'firebase/auth'
 import Navbar from './components/Navbar/Navbar';
 import HotelPage from './components/Hotel'
-import Homepage from './components/Home'
-import TravelPage from './components/Travel';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './components/Home';
 import TravelGuidePage from './components/Travel';
