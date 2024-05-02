@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import BGImg from '../assets/loginformbg.jpg'
 import { useNavigate } from 'react-router-dom'
-import { getAuth, createUserWithEmailAndPassword,updateProfile } from 'firebase/auth';
-import { setDoc,doc } from 'firebase/firestore';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import "react-toastify/ReactToastify.css";
-import { app,database, auth} from '../firebase.js'
+import { app, database, auth} from '../firebase'
 
 function SignupForm() {
   const [firstName, setFirstName] = useState('');
@@ -18,7 +17,6 @@ function SignupForm() {
 
   const navigate = useNavigate();
 
-  
   const switchToLogin = () => {
     navigate('/login'); // Replace with your actual login route path
   };
@@ -33,46 +31,36 @@ function SignupForm() {
 
     if (password !== confirmPassword) {
       setErrorMessage('Passwords do not match.');
-      toast.error(errorMessage)
-      console.log('Passwords do not match. ')
+      toast.error(errorMessage,{
+        position: 'bottom-right',
+        autoClose: 2200,
+        closeOnClick: true,
+        draggable: true,
+        theme: 'light',
+        transition: Bounce,
+      });
       return;
     }
-    const user=auth.currentUser;
 
     try {
-       await createUserWithEmailAndPassword(auth, email, password).then(async () => {
-				// Get the user variable :
-				const user=auth.currentUser;
-        console.log(user)
-        console.log(user)
-        console.log("hi")
-        updateProfile(user, {
-              displayName:firstName+ ' '+lastName ,
-              phoneNumber: phoneNo,
-            });
-				await setDoc(
-					doc(database, "Users", user.uid),
-					{
-						name: user.displayName,
-						phone: phoneNo,
-			
-					}
-				);
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
 
-				toast.success("Account Created Successfully!");
+      // await database.collection('users').doc(user.uid).set({
+      //   firstName,
+      //   lastName,
+      //   phoneNo,
+      // });
 
-			})
-			.catch((error) => {
-				const errorMessage = error.message;
-				toast.error(errorMessage);
-			});
-      // const user = userCredential.user;
-    
-      await database.collection('users').doc(user.uid).set({
-        firstName,
-        lastName,
-        phoneNo,
+      toast.success('Signed Up Successfully!',{
+        position: 'bottom-right',
+        autoClose: 2200,
+        closeOnClick: true,
+        draggable: true,
+        theme: 'light',
+        transition: Bounce,
       });
+<<<<<<< HEAD
       updateProfile(user, {
         displayName:firstName+ ' '+lastName ,
         phoneNumber: phoneNo,
@@ -82,6 +70,9 @@ function SignupForm() {
 
       toast.success('Signed Up Successfully!');
       console.log('User signed up:', auth.currentUser);
+=======
+      console.log('User signed up:', userCredential.user);
+>>>>>>> parent of 98df6fa (Backend database)
 
       setEmail('');
       setPassword('');
@@ -95,7 +86,14 @@ function SignupForm() {
       // Redirect to a success page or display confirmation message
     } catch (error) {
       setErrorMessage(error.message); // Display error message to user
-      toast.error(errorMessage);
+      toast.error(errorMessage,{
+        position: 'bottom-right',
+        autoClose: 2200,
+        closeOnClick: true,
+        draggable: true,
+        theme: 'light',
+        transition: Bounce,
+      });
     }
   };
 
@@ -140,7 +138,6 @@ function SignupForm() {
                 setLastName(e.target.value)
               }}
               value={lastName}
-              
             />
           </div>
           <div>
