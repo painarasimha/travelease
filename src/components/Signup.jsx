@@ -80,7 +80,7 @@ function SignupForm() {
       
 
 
-      toast.success(message);
+      toast.success('Signed Up Successfully!');
       console.log('User signed up:', auth.currentUser);
 
       setEmail('');
