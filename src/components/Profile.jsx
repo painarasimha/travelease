@@ -3,8 +3,9 @@ import Img5 from '../assets/image1.jpg';
 import ProfileImg from '../assets/profile2.jpg'
 import { getAuth, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { app,database, auth} from '../firebase.js'
 
-function ProfilePage({ firstName = 'Liam', lastName = 'Singh', email = 'liamsingh777@gmail.com', badgeName = 'Beginner Badge', phone = '8762283051'}) {
+function ProfilePage({ firstName = 'Liam', lastName = 'Singh', email = 'liamsingh777@gmail.com', badgeName = 'Wanderlust', phone = '8762283051'}) {
   const [progress, setProgress] = useState(57);
 
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ function ProfilePage({ firstName = 'Liam', lastName = 'Singh', email = 'liamsing
      const validProgress = Math.min(Math.max(newProgress, 0), 100);
   };
 
-  const auth = getAuth();
+  // const auth = getAuth();
 
   const handleLogout = async () => {
     try {
@@ -29,7 +30,7 @@ function ProfilePage({ firstName = 'Liam', lastName = 'Singh', email = 'liamsing
       // Handle errors appropriately (e.g., display an error message to the user)
     }
   };
-  
+  const user = auth.currentUser;
   return (
     <div className="profile-container h-screen bg-cover px-8 pt-20 pb-8 " style={{ backgroundImage: `url(${Img5})` }}>
       <div className="overlay fixed top-[calc(40px + 1rem)] left-1/2 transform -translate-x-1/2 py-8 px-12 rounded-3xl shadow-md shadow-black w-[800px] h-[480px] bg-[#7d8321]"></div>
@@ -43,10 +44,9 @@ function ProfilePage({ firstName = 'Liam', lastName = 'Singh', email = 'liamsing
           </div>
           <span className="text-sm text-black font-bold mt-1">{100-progress}% to Next Level</span>
         </div>
-        <h1 className="text-2xl font-semibold p-56 left-[460px] fixed text-black">Firstname: {firstName}</h1>
-        <h1 className="text-2xl font-semibold p-64 top-4 left-[428px] fixed text-black">Lastname: {lastName}</h1>
-        <h1 className="text-2xl font-semibold p-64 top-16 left-[428px] fixed text-black">Email: {email}</h1>
-        <h1 className="text-2xl font-semibold p-64 top-[113px] left-[428px] fixed text-black">Phone No: {phone}</h1> 
+        <h1 className="text-2xl font-semibold p-56 left-[460px] fixed text-black">Firstname: {user.displayName}</h1>
+        <h1 className="text-2xl font-semibold p-64 top-6 left-[428px] fixed text-black">Email: {user.email}</h1>
+        <h1 className="text-2xl font-semibold p-64 top-[80px] left-[428px] fixed text-black">Phone No: {phone}</h1> 
         <button className="fixed font-bold left-[700px] mt-[530px] px-6 py-3 bg-green-900 shadow-inner shadow-slate-500 text-white rounded-md hover:bg-green-700 focus:outline-none" onClick={handleLogout}>
           Logout
         </button>

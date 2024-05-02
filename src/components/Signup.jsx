@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import BGImg from '../assets/loginformbg.jpg'
 import { useNavigate } from 'react-router-dom'
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, createUserWithEmailAndPassword,updateProfile } from 'firebase/auth';
+import { setDoc,doc } from 'firebase/firestore';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import "react-toastify/ReactToastify.css";
-import { app, database, auth} from '../firebase'
+import { app,database, auth} from '../firebase.js'
 
 function SignupForm() {
   const [firstName, setFirstName] = useState('');
@@ -17,6 +18,7 @@ function SignupForm() {
 
   const navigate = useNavigate();
 
+  
   const switchToLogin = () => {
     navigate('/login'); // Replace with your actual login route path
   };
@@ -31,36 +33,55 @@ function SignupForm() {
 
     if (password !== confirmPassword) {
       setErrorMessage('Passwords do not match.');
-      toast.error(errorMessage,{
-        position: 'bottom-right',
-        autoClose: 2200,
-        closeOnClick: true,
-        draggable: true,
-        theme: 'light',
-        transition: Bounce,
-      });
+      toast.error(errorMessage)
+      console.log('Passwords do not match. ')
       return;
     }
+    const user=auth.currentUser;
 
     try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      const user = userCredential.user;
+       await createUserWithEmailAndPassword(auth, email, password).then(async () => {
+				// Get the user variable :
+				const user=auth.currentUser;
+        console.log(user)
+        console.log(user)
+        console.log("hi")
+        updateProfile(user, {
+              displayName:firstName+ ' '+lastName ,
+              phoneNumber: phoneNo,
+            });
+				await setDoc(
+					doc(database, "Users", user.uid),
+					{
+						name: user.displayName,
+						phone: phoneNo,
+			
+					}
+				);
 
-      // await database.collection('users').doc(user.uid).set({
-      //   firstName,
-      //   lastName,
-      //   phoneNo,
-      // });
+				toast.success("Account Created Successfully!");
 
-      toast.success('Signed Up Successfully!',{
-        position: 'bottom-right',
-        autoClose: 2200,
-        closeOnClick: true,
-        draggable: true,
-        theme: 'light',
-        transition: Bounce,
+			})
+			.catch((error) => {
+				const errorMessage = error.message;
+				toast.error(errorMessage);
+			});
+      // const user = userCredential.user;
+    
+      await database.collection('users').doc(user.uid).set({
+        firstName,
+        lastName,
+        phoneNo,
       });
-      console.log('User signed up:', userCredential.user);
+      updateProfile(user, {
+        displayName:firstName+ ' '+lastName ,
+        phoneNumber: phoneNo,
+      });
+      
+
+
+      toast.success(message);
+      console.log('User signed up:', auth.currentUser);
 
       setEmail('');
       setPassword('');
@@ -74,14 +95,7 @@ function SignupForm() {
       // Redirect to a success page or display confirmation message
     } catch (error) {
       setErrorMessage(error.message); // Display error message to user
-      toast.error(errorMessage,{
-        position: 'bottom-right',
-        autoClose: 2200,
-        closeOnClick: true,
-        draggable: true,
-        theme: 'light',
-        transition: Bounce,
-      });
+      toast.error(errorMessage);
     }
   };
 
@@ -126,6 +140,7 @@ function SignupForm() {
                 setLastName(e.target.value)
               }}
               value={lastName}
+              
             />
           </div>
           <div>
